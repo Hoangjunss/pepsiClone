@@ -2,26 +2,112 @@
 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 body
 {
+    width: 100%;
     height: 100vh;
+    box-sizing: border-box;
 }
 .background
 {
-    background-image: url(../images/background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
     height: 100vh;
+}
+video
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .menu
 {
+    position: fixed;
     width: 100%;
     height: 100px;
-    background-color:blue;
-    position: fixed;
     top: 0;
     left: 0;
+    background: #0025ff;
+
+}
+.list
+{
+    position: relative;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    width: 95%;
+    display: flex;
+}
+.list-item
+{
+    height: 100px;
+    text-align: center;
+    margin:0 3.5%;
+}
+.list-item img 
+{
+    margin-top: 26%;
+    height: 60%;
+    float: left;
+    background-size: cover;
+}
+.list-item span
+{
+    margin-top: 26%;
+    height: 60%;
+    float: left;
+    background-size: cover;
+    font-weight: bolder;
+    color: white;
+}
+.list-item p
+{
+    margin-top: 42%;
+    height: 60%;
+    float: left;
+    background-size: cover;
+    font-weight: bolder;
+    color: white;
+}
+.pepsi_125
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.header
+{
+    width: 100%;
+    height: 50%;
+    background-color: #000;
+    text-align: center;
+    padding: 3em 0 0 0;
+    font-weight: bold;
+}
+.header h2
+{
+    color: #fff;
+    font-size: 70px;
+    line-height: 63px;
+}
+.header h3
+{
+    color: #fff;
+    font-size: 42px;
+    line-height: 50px;
+}
+.header button
+{
+    font-size: 52px;
+    line-height: 52px;
+    padding: 0.55em;
+    margin: 1em 0 1.3em 0;
+    color: white;
+    font-weight: bold;
+    background-color: #0025ff;
 }

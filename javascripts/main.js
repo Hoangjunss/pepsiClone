@@ -8,7 +8,6 @@
    <ul class="list">
     <li class="list-item"><img src="image/logo.png" alt=""></li>
     <li class="list-item"><span>VIEW PRODUCT</span>
-    
     </li>
     <li class="list-item"><a href="pepsi125.html">#PEPSI125</a></li>
 </ul>
@@ -20,7 +19,7 @@ const background=document.querySelector('#background')
 if(background!==null){
     background.innerHTML=
    `
-   <video src="https://www.pepsi.com/en-us/refresh082123/media/PEPSI_2023_PR_Sizzle_1920px_trimmed.mp4" autoplay="true" loop="true" playsinline="true" muted="true"></video>
+   <video class="embed-responsive-item" src="https://www.pepsi.com/en-us/refresh082123/media/PEPSI_2023_PR_Sizzle_1920px_trimmed.mp4" autoplay="true" loop="true" playsinline="true" muted="true"></video>
    `
 
  
@@ -35,14 +34,14 @@ if(pepsi125!==null){
 <a href='pepsi125.html'><button >FOLLOW ALONG</button></a>
 </div>
 
-<video type="video/mp4" src="https://www.pepsi.com/en-us/refresh082123/media/Titan_TR_Digital_30_PETD3091000H_CreativeX_sm.mp4" autoplay="true" loop="true" playsinline="true" muted="true"></video>
+<video type="video/mp4"  src="https://www.pepsi.com/en-us/refresh082123/media/Titan_TR_Digital_30_PETD3091000H_CreativeX_sm.mp4" autoplay="true" loop="true" playsinline="true" muted="true"></video>
 `
 }
 const pepsi125Background=document.querySelector('#pepsi125Background')
 if(pepsi125Background!==null){
     pepsi125Background.innerHTML=
     `
-    <img src="image/background1.png" alt="">
+    <img src="image/background1.png" alt="" class="img-fluid" >
     `
 }
 

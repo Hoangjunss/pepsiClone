@@ -260,7 +260,7 @@ p:hover {
         }
         .list-item span
        {
-            height: 40%;
+            font-size: 30px;
             
        }
         .data .dataList {

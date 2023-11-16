@@ -3,7 +3,7 @@
 const navigation = document.querySelector('#footer')
    navigation.innerHTML=
    `
-   <div class='footerContainer container-fluid row d-flex align-items-center' style="height:300px;color:white; background:#0025ff">
+   <div class='footerContainer container-fluid row d-flex align-items-center' style="height:200px;color:white; background:#0025ff">
        <div class='logo col-xl-2 d-flex align-items-center'>
          <img src='image/logo.png'/>
        </div>

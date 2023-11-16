@@ -71,6 +71,9 @@ video
     font-weight: bolder;
     color: white;
 }
+p:hover{
+    color: black;
+}
 #pepsi125
 {
     width: 100%;
@@ -84,19 +87,41 @@ video
     background-color: #000;
     text-align: center;
     padding: 3em 0 0 0;
-    font-weight: bold;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .header h2
 {
+    width: 100%;
+    align-items: center;
     color: #fff;
     font-size: 70px;
     line-height: 63px;
+    animation: typing 10s  infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bolder;
+}
+@keyframes typing
+{
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 100%; 
+    }
+    
 }
 .header h3
 {
     color: #fff;
     font-size: 42px;
     line-height: 50px;
+    font-weight: bolder;
 }
 .header button
 {
@@ -108,9 +133,7 @@ video
     font-weight: bold;
     background-color: #0025ff;
 }
-p:hover{
-    color: black;
-}
+
 .imgList{
     overflow: hidden;
 }

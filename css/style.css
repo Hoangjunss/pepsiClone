@@ -155,6 +155,7 @@ padding: 0;
 }
 .footerContainer{
     height:200px;
+    background:#0025ff;
 }
 
     @media only screen and (max-width: 700px) {
@@ -188,6 +189,10 @@ padding: 0;
         .footerContainer{
             height: auto;
             justify-content: center;
+            background-color: #000;
+        }
+        .footerContainer p{
+            color: #fff;
         }
         .imgItems{
             margin: 0;
@@ -195,5 +200,11 @@ padding: 0;
         .sliderContainer h1{
             font-size: 25px;
             padding: 30px;
+        }
+        .iconContainer{
+            background-color: #0025ff;
+        }
+        .iconContainer i{
+            font-size: 50px;
         }
       }

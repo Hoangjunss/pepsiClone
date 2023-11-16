@@ -69,7 +69,7 @@ if(pepsi125Background!==null){
    const footer = document.querySelector('#footer')
    footer.innerHTML=
    `
-   <div class='footerContainer  row d-flex align-items-center' style="color:white; background:#0025ff;width:100%;margin:0">
+   <div class='footerContainer  row d-flex align-items-center' style="color:white; width:100%;margin:0">
        <div class='logo col-xl-2 d-flex align-items-center' >
          <img src='image/logo.png'/>
        </div>
@@ -88,7 +88,7 @@ if(pepsi125Background!==null){
        <p>ABOUT OUR ADS</p>
        <p> CAREERS</p>
        </div>
-       <div class='col-xl-2 d-flex align-items-center justify-content-center mx-sm-5'>
+       <div class=' iconContainer col-xl-2 d-flex align-items-center justify-content-center mx-sm-5'>
        <i class='bx bxl-instagram display-4 mx-xl-4'></i>
        <i class='bx bxl-facebook display-4 mx-xl-4' ></i>
        <i class='bx bxl-youtube display-4 mx-xl-4' ></i>

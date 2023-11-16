@@ -28,8 +28,6 @@ video {
     top: 0;
     left: 0;
     background: #0025ff;
-
-    z-index: 2;
    z-index: 10000;
    transition: all 1s ease-out;
 }
@@ -179,7 +177,10 @@ p:hover {
     color: rgb(255, 0, 0);
     background-color: yellowgreen;
 }
-
+.row
+{
+    width: 101%;
+}
 .imgList {
     overflow: hidden;
 }
@@ -195,7 +196,7 @@ p:hover {
     transform: scale(1.3) rotate(10deg);
     transition: 0.4s;
     overflow: hidden;
-    opacity: 0.65;
+    opacity: 0.6;
 }
 
 .imgList .imgItems {

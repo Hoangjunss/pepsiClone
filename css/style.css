@@ -213,4 +213,7 @@ padding: 0;
             height: 40%;
             
        }
+        .data .dataList {
+         width: calc(100%/3);
+       }
       }

@@ -1,12 +1,32 @@
 //https://www.pepsi.com/en-us/refresh082123/media/PEPSI_2023_PR_Sizzle_1920px_trimmed.mp4
 //https://www.pepsi.com/en-us/refresh082123/media/PEPSI_2023_PR_Sizzle_1920px_trimmed.mp4
 const dataSlider=[
-   "https://www.pepsi.com/en-us/pepsi125/feed_images/402534088_661318635987139_2195782173770101432_n.jpg",
-   "https://www.pepsi.com/en-us/pepsi125/feed_images/401873514_322774383841723_58002396780493345_n.jpg",
-  " https://www.pepsi.com/en-us/pepsi125/feed_images/402082440_235038522733687_7534041995378100998_n.jpg"
+
+  "image/backgroundSlider2.jpg",
+  "image/backgroundSlider3.jpg",
+  "image/backgroundSlider4.jpg",
+  "image/backgroundSlider5.jpg",
+  "image/backgroundSlider6.jpg",
+  "image/backgroundSlider7.jpg",
+  "image/backgroundSlider8.jpg",
+  "image/backgroundSlider9.jpg",
+  "image/backgroundSlider10.jpg",
+  "image/backgroundSlider11.jpg",
+  "image/backgroundSlider12.jpg",
+  "image/backgroundSlider13.jpg",
+  "image/backgroundSlider14.jpg",
+  "image/backgroundSlider15.jpg",
+  "image/backgroundSlider16.jpg",
+  "image/backgroundSlider17.jpg",
+  "image/backgroundSlider18.jpg",
+  "image/backgroundSlider19.jpg",
 ]
-const data=dataSlider.map((data)=>(`<div>${data}</div>`)).join("")
-console.log(data)
+const data=document.querySelector('.data')
+if(data!==null){
+  data.innerHTML=dataSlider.map((data)=>(`<div class="col-md-2 overflow-hidden p-0 imgList dataList" ><img src="${data}" class="img-fluid p-0 dataItems"/></div>`)).join("")
+
+}
+
 
    const menu=document.querySelector('#menu')
    if(menu!==null){

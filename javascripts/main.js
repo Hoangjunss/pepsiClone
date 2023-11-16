@@ -1,15 +1,22 @@
 //https://www.pepsi.com/en-us/refresh082123/media/PEPSI_2023_PR_Sizzle_1920px_trimmed.mp4
 //https://www.pepsi.com/en-us/refresh082123/media/PEPSI_2023_PR_Sizzle_1920px_trimmed.mp4
+const dataSlider=[
+   "https://www.pepsi.com/en-us/pepsi125/feed_images/402534088_661318635987139_2195782173770101432_n.jpg",
+   "https://www.pepsi.com/en-us/pepsi125/feed_images/401873514_322774383841723_58002396780493345_n.jpg",
+  " https://www.pepsi.com/en-us/pepsi125/feed_images/402082440_235038522733687_7534041995378100998_n.jpg"
+]
+const data=dataSlider.map((data)=>(`<div>${data}</div>`)).join("")
+console.log(data)
 
    const menu=document.querySelector('#menu')
    if(menu!==null){
      menu.innerHTML=
    `
    <ul class="list">
-    <li class="list-item"><img src="image/logo.png" alt=""></li>
-    <li class="list-item"><span>VIEW PRODUCT</span>
+    <li class="list-item mx-sm-3"><img src="image/logo.png" alt=""></li>
+    <li class="list-item mx-sm-3"><span>VIEW PRODUCT</span>
     </li>
-    <li class="list-item"><a href="pepsi125.html">#PEPSI125</a></li>
+    <li class="list-item mx-sm-3"><a href="pepsi125.html">#PEPSI125</a></li>
 </ul>
 `
    }

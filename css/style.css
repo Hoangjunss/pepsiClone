@@ -29,6 +29,7 @@ video
     left: 0;
     background: #0025ff;
    z-index: 10000;
+   transition: all 1s ease-out;
 }
 .list
 {
@@ -207,4 +208,9 @@ padding: 0;
         .iconContainer i{
             font-size: 50px;
         }
+        .list-item span
+       {
+            height: 40%;
+            
+       }
       }

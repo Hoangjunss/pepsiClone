@@ -50,16 +50,16 @@ if(pepsi125Background!==null){
    if(slider!==null){
     slider.innerHTML=
    `
-   <div class='sliderContainer container-fluid d-flex flex-column align-items-center ' style="background:#000 ;color:#1636ff">
+   <div class='sliderContainer container-fluid d-flex flex-column align-items-center pb-5 ' style="background:#000 ;color:#1636ff">
      <h1 class='display-5 my-lg-4' style=" font-family: 'Roboto',sans-serif; font-weight:bold">STAY ON THE PULSE. FOLLOW PEPSI.</h1>
      <div class=' imgList row mb-lg-5 ' style='height:auto ;  width:90% ;border:3px solid #1636ff' >
     
-   <div class="col-lg-2 imgItems">   <img  src= "image/background2.png"/></div>
-   <div class="col-lg-2 imgItems">   <img  src= "image/background3.png"/></div>
-   <div class="col-lg-2 imgItems">   <img  src= "image/background4.png"/></div>
-   <div class="col-lg-2 imgItems">   <img  src= "image/background5.png"/></div>
-   <div class="col-lg-2 imgItems">   <img  src= "image/background6.png"/></div>
-   <div class="col-lg-2 imgItems">   <img  src= "image/backgroung7.png"/></div>
+   <div class="col-md-2 imgItems">   <img  src= "image/background2.png"/></div>
+   <div class="col-md-2 imgItems">   <img  src= "image/background3.png"/></div>
+   <div class="col-md-2 imgItems">   <img  src= "image/background4.png"/></div>
+   <div class="col-md-2 imgItems">   <img  src= "image/background5.png"/></div>
+   <div class="col-md-2 imgItems">   <img  src= "image/background6.png"/></div>
+   <div class="col-md-2 imgItems">   <img  src= "image/backgroung7.png"/></div>
      </div>
    </div>
    `
@@ -69,7 +69,7 @@ if(pepsi125Background!==null){
    const footer = document.querySelector('#footer')
    footer.innerHTML=
    `
-   <div class='footerContainer  row d-flex align-items-center' style="height:200px;color:white; background:#0025ff;width:100%;margin:0">
+   <div class='footerContainer  row d-flex align-items-center' style="color:white; background:#0025ff;width:100%;margin:0">
        <div class='logo col-xl-2 d-flex align-items-center' >
          <img src='image/logo.png'/>
        </div>

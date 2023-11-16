@@ -111,3 +111,26 @@ video
     font-weight: bold;
     background-color: #0025ff;
 }
+
+ p:hover{
+    color: black;
+}
+.imgList{
+    overflow: hidden;
+}
+.imgList img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.imgList img:hover{
+    transform: scale(1.3) rotate(10deg);
+    transition: 0.4s;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.imgList .imgItems{
+overflow: hidden;
+padding: 0;
+}

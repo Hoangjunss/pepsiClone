@@ -1,5 +1,5 @@
-*
-{
+/*clip-path: polygon(0% 53%, 7% 54%, 12% 54%, 25% 56%, 30% 55%, 41% 55%, 49% 52%, 57% 47%, 65% 44%, 74% 41%, 80% 40%, 90% 38%, 99% 36%, 100% 0%, 0% 0%);*/
+*{
     margin: 0;
     padding: 0;
 }
@@ -62,7 +62,7 @@ video
     font-weight: bolder;
     color: white;
 }
-.list-item p
+.list-item a
 {
     margin-top: 42%;
     height: 60%;

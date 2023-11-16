@@ -1,37 +1,37 @@
 /*clip-path: polygon(0% 53%, 7% 54%, 12% 54%, 25% 56%, 30% 55%, 41% 55%, 49% 52%, 57% 47%, 65% 44%, 74% 41%, 80% 40%, 90% 38%, 99% 36%, 100% 0%, 0% 0%);*/
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body
-{
+
+body {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
 }
-#background
-{
+
+#background {
     height: 100vh;
 }
-video
-{
+
+video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
-#menu
-{
+
+#menu {
     position: fixed;
     width: 100%;
     height: 100px;
     top: 0;
     left: 0;
     background: #0025ff;
-
+    z-index: 2;
 }
-.list
-{
+
+.list {
     position: relative;
     align-items: center;
     margin: auto;
@@ -40,21 +40,21 @@ video
     width: 95%;
     display: flex;
 }
-.list-item
-{
+
+.list-item {
     height: 100px;
     text-align: center;
-    margin:0 3.5%;
+    margin: 0 3.5%;
 }
-.list-item img 
-{
+
+.list-item img {
     margin-top: 26%;
     height: 60%;
     float: left;
     background-size: cover;
 }
-.list-item span
-{
+
+.list-item span {
     margin-top: 26%;
     height: 60%;
     float: left;
@@ -62,8 +62,8 @@ video
     font-weight: bolder;
     color: white;
 }
-.list-item a
-{
+
+.list-item a {
     margin-top: 42%;
     height: 60%;
     float: left;
@@ -71,17 +71,25 @@ video
     font-weight: bolder;
     color: white;
 }
-p:hover{
+
+p:hover {
     color: black;
 }
-#pepsi125
-{
+
+#pepsi125 {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-.header
-{
+
+#pepsi125Background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header {
     width: 100%;
     height: 50%;
     background-color: #000;
@@ -92,39 +100,69 @@ p:hover{
     flex-direction: column;
     align-items: center;
 }
-.header h2
-{
+
+.header h2 {
     width: 100%;
     align-items: center;
     color: #fff;
     font-size: 70px;
     line-height: 63px;
-    animation: typing 10s  infinite;
+    animation: typing 10s ;
     white-space: nowrap;
     overflow: hidden;
     font-weight: bolder;
 }
-@keyframes typing
-{
-    0%
-    {
+
+@keyframes typing {
+    0% {
         width: 0%;
     }
-    100%
-    {
-        width: 100%; 
+
+    100% {
+        width: 100%;
     }
-    
+
 }
-.header h3
-{
-    color: #fff;
+
+.text {
+    position: relative;
     font-size: 42px;
     line-height: 50px;
     font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    overflow: hidden;
 }
-.header button
-{
+
+.text span {
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+.text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    animation: cover 20s forwards;/* Thêm forwards để giữ trạng thái khung hình chính cuối cùng */
+    z-index: 1;
+}
+
+@keyframes cover {
+    0% {
+        left: 0%; 
+        
+    }
+    100% {
+        left: 100%; 
+        opacity: 0;
+    }
+}
+
+
+.header button {
     font-size: 52px;
     line-height: 52px;
     padding: 0.55em;
@@ -134,22 +172,30 @@ p:hover{
     background-color: #0025ff;
 }
 
-.imgList{
+.header button:hover {
+    color: rgb(255, 0, 0);
+    background-color: yellowgreen;
+}
+
+.imgList {
     overflow: hidden;
 }
-.imgList img{
+
+.imgList img {
     overflow: hidden;
     width: 100%;
     height: 100%;
     padding: 0;
 }
-.imgList img:hover{
+
+.imgList img:hover {
     transform: scale(1.3) rotate(10deg);
     transition: 0.4s;
     overflow: hidden;
-    opacity: 0.8;
+    opacity: 0.5;
 }
-.imgList .imgItems{
-overflow: hidden;
-padding: 0;
+
+.imgList .imgItems {
+    overflow: hidden;
+    padding: 0;
 }

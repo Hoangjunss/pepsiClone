@@ -31,9 +31,10 @@ if(pepsi125!==null){
 `
 <div class="header">
 <h2>CELEBRATING 125 YEARS</h2> 
-<h3>OF PEPSI FOR 125 DAYS.</h3>
-<a href='pepsi125.html'><button >FOLLOW ALONG</button></a>
+<h3 class="text"><span>OF PEPSI FOR 125 DAYS.</span></h3>
+<a href='pepsi125.html'><button>FOLLOW ALONG</button></a>
 </div>
+<img src="image/background1.png" alt="">
 
 <video type="video/mp4" src="https://www.pepsi.com/en-us/refresh082123/media/Titan_TR_Digital_30_PETD3091000H_CreativeX_sm.mp4" autoplay="true" loop="true" playsinline="true" muted="true"></video>
 `

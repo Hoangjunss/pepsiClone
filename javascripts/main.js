@@ -37,7 +37,7 @@ const footer = document.querySelector('#footer')
    
    slider.innerHTML=
    `
-   <div class='sliderContainer container-fluid d-flex flex-column align-items-center mt-lg-4 ' style="background:#000 ;color:#1636ff">
+   <div class='sliderContainer container-fluid d-flex flex-column align-items-center ' style="background:#000 ;color:#1636ff">
      <h1 class='display-5 my-lg-4' style=" font-family: 'Roboto',sans-serif; font-weight:bold">STAY ON THE PULSE. FOLLOW PEPSI.</h1>
      <div class=' imgList row mb-lg-5 ' style='height:auto ;  width:90% ;border:3px solid #1636ff' >
     

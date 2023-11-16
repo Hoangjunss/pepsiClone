@@ -2,7 +2,6 @@
 {
     margin: 0;
     padding: 0;
-    
 }
 body
 {
@@ -12,7 +11,6 @@ body
 }
 .background
 {
-
     height: 100vh;
 }
 video
@@ -78,7 +76,6 @@ video
     width: 100%;
     display: flex;
     flex-direction: column;
-    
 }
 .header
 {
@@ -111,8 +108,7 @@ video
     font-weight: bold;
     background-color: #0025ff;
 }
-
- p:hover{
+p:hover{
     color: black;
 }
 .imgList{

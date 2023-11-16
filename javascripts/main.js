@@ -2,33 +2,54 @@
 //https://www.pepsi.com/en-us/refresh082123/media/PEPSI_2023_PR_Sizzle_1920px_trimmed.mp4
 
    const menu=document.querySelector('#menu')
-   menu.innerHTML=
+   if(menu!==null){
+     menu.innerHTML=
    `
    <ul class="list">
     <li class="list-item"><img src="image/logo.png" alt=""></li>
-    <li class="list-item"><span>VIEW PRODUCT</span></li>
-    <li class="list-item"><p>#PEPSI125</p></li>
+    <li class="list-item"><span>VIEW PRODUCT</span>
+    
+    </li>
+    <li class="list-item"><a href="pepsi125.html">#PEPSI125</a></li>
 </ul>
-   `
+`
+   }
+  
+   
 const background=document.querySelector('#background')
-   background.innerHTML=
+if(background!==null){
+    background.innerHTML=
    `
    <video src="https://www.pepsi.com/en-us/refresh082123/media/PEPSI_2023_PR_Sizzle_1920px_trimmed.mp4" autoplay="true" loop="true" playsinline="true" muted="true"></video>
    `
 
-  const pepsi125=document.querySelector('#pepsi125')
-  pepsi125.innerHTML=
-  `
-  <div class="header">
-  <h2>CELEBRATING 125 YEARS</h2> 
-  <h3>OF PEPSI FOR 125 DAYS.</h3>
-  <button>FOLLOW ALONG</button>
+ 
+}
+const pepsi125=document.querySelector('#pepsi125')
+if(pepsi125!==null){
+    pepsi125.innerHTML=
+`
+<div class="header">
+<h2>CELEBRATING 125 YEARS</h2> 
+<h3>OF PEPSI FOR 125 DAYS.</h3>
+<a href='pepsi125.html'><button >FOLLOW ALONG</button></a>
 </div>
-<img src="image/background1.png" alt="">
+
 <video type="video/mp4" src="https://www.pepsi.com/en-us/refresh082123/media/Titan_TR_Digital_30_PETD3091000H_CreativeX_sm.mp4" autoplay="true" loop="true" playsinline="true" muted="true"></video>
-  `
-   
-   slider.innerHTML=
+`
+}
+const pepsi125Background=document.querySelector('#pepsi125Background')
+if(pepsi125Background!==null){
+    pepsi125Background.innerHTML=
+    `
+    <img src="image/background1.png" alt="">
+    `
+}
+
+
+   const slider=document.querySelector('#slider')
+   if(slider!==null){
+    slider.innerHTML=
    `
    <div class='sliderContainer container-fluid d-flex flex-column align-items-center ' style="background:#000 ;color:#1636ff">
      <h1 class='display-5 my-lg-4' style=" font-family: 'Roboto',sans-serif; font-weight:bold">STAY ON THE PULSE. FOLLOW PEPSI.</h1>
@@ -43,6 +64,9 @@ const background=document.querySelector('#background')
      </div>
    </div>
    `
+   }
+   
+   
    const footer = document.querySelector('#footer')
    footer.innerHTML=
    `

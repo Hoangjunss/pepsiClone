@@ -9,7 +9,7 @@ body
     height: 100vh;
     box-sizing: border-box;
 }
-.background
+#background
 {
     height: 100vh;
 }
@@ -20,7 +20,7 @@ video
     object-fit: cover;
     object-position: center;
 }
-.menu
+#menu
 {
     position: fixed;
     width: 100%;
@@ -71,7 +71,7 @@ video
     font-weight: bolder;
     color: white;
 }
-.pepsi_125
+#pepsi125
 {
     width: 100%;
     display: flex;

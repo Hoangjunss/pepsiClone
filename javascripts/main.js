@@ -34,7 +34,7 @@ if(data!==null){
    `
    <ul class="list">
     <li class="list-item mx-sm-3"><img src="image/logo.png" alt=""></li>
-    <li class="list-item mx-sm-3"><span>VIEW PRODUCT</span>
+    <li class="list-item mx-sm-3 active"><span>VIEW PRODUCT</span>
     </li>
     <li class="list-item mx-sm-3"><a href="pepsi125.html">#PEPSI125</a></li>
 </ul>
@@ -124,3 +124,19 @@ if(pepsi125Background!==null){
        </div>
    </div>
    `
+   const wave = document.querySelector('.wave');
+   const activeButton = document.querySelector('.active');
+   
+   activeButton.addEventListener('click', () => {
+       wave.classList.toggle('show');
+       if (!wave.classList.contains('show')) {
+           wave.classList.add('hide');
+           wave.addEventListener('animationend', () => {
+               wave.classList.remove('hide');
+               wave.style.display = 'none'; // Ẩn phần tử sau khi animation kết thúc
+           }, { once: true });
+       } else {
+           wave.classList.remove('hide');
+           wave.style.display = 'block'; // Hiển thị phần tử trước khi animation bắt đầu
+       }
+   });

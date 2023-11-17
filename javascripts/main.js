@@ -151,11 +151,16 @@ const activeButton = document.querySelector('.active');
 activeButton.addEventListener('click', () => {
   wave.classList.toggle('show');
   if (!wave.classList.contains('show')) {
+   
     wave.classList.add('hide');
-    wave.addEventListener('animationend', () => {
-      wave.classList.remove('hide');
-      wave.style.display = 'none'; // Ẩn phần tử sau khi animation kết thúc
-    }, { once: true });
+    document.querySelector('.hide').style.animationPlayState = 'running'
+    setTimeout(() => {
+     
+        console.log('1')
+        wave.classList.remove('hide');
+        wave.style.display = 'none'; // Ẩn phần tử sau khi animation kết thúc
+    
+    }, 1000);
   } else {
     wave.classList.remove('hide');
     wave.style.display = 'flex'; // Hiển thị phần tử trước khi animation bắt đầu

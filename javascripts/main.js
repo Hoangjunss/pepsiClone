@@ -28,15 +28,17 @@ const dataWave=[
   "image/pepsinitrovanilla.png",
   "image/pepsiwildcherry.png",
   "image/pepsizero.png",
-  "image/pepsizeromango",
-  "image/dietpepsi.png",
+
 ]
 const wave = document.querySelector('.wave');
+const waveContainer=document.querySelector('.waveContainer')
 
-if(wave!==null){
 
 
-wave.innerHTML=dataWave.map((data)=>(`<div class="col-md-4 overflow-hidden p-0 imgList dataList" ><img src="${data}" class="img-fluid p-0 dataItems"/></div>`)).join("")
+if(wave!==null&&waveContainer!==null){
+
+
+waveContainer.innerHTML=dataWave.map((data)=>(`<div class="col-md-2 overflow-hidden p-0 imgList dataList h-100"  ><img src="${data}" class="img-fluid p-0 dataItems"/></div>`)).join("")
 }
 const data=document.querySelector('.data')
 if(data!==null){

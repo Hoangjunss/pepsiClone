@@ -211,15 +211,6 @@ p:hover {
     }
 
 }
-@keyframes cover {
-    0% {
-        left: 0%;
-    }
-    100% {
-        left: 100%;
-        opacity: 0;
-    }
-}
 
 @keyframes wave {
     0% {
@@ -375,158 +366,11 @@ p:hover {
         transform: translateY(0);
     }
 }
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 
 
-.text-primary-1 {
-    color: #007bff;
-    animation: colorPulse 4s linear 2 forwards;
-    display: inline-block;
-}
-@keyframes colorPulse {
-
-    0%,
-    100% {
-        color: #007bff;
-
-@keyframes colorChange {
-    14.2857% {
-        color: #ff0000;
-
-    }
-
-    28.5714% {
-        color: #ffa500;
-
-    }
-
-    42.8571% {
-        color: #ffff00;
-
-    }
-
-    57.1428% {
-        color: #008000;
-
-    }
-
-    71.4285% {
-        color: #0000ff;
-
-    }
-
-    85.7142% {
-        color: #4b0082;
-
-    }
-
-    100% {
-        color: pink;
-
-    }
-}
-
-@keyframes rainbowAnimation {
-
-    0%,
-    100% {
-        background-position: 0 0;
-    }
-
-    25% {
-        background-position: 100% 0;
-    }
-
-    50% {
-        background-position: 100% 0;
-    }
-
-    75% {
-        background-position: 0 0;
-    }
-}
-
-@keyframes returnToBlack {
-    to {
-        color: #fff;
-    }
-}
-@media only screen and (max-width: 700px) {
-    .header h2 {
-        font-size: 30px;
-    }
-
-    .header h3 {
-        font-size: 25px;
-    }
-
-    .header button {
-        font-size: 20px;
-    }
-
-    .imgList .imgItems {
-        width: 50%;
-    }
-
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.pepsi125Header h2,
-.pepsi125Header h3 span {
-    opacity: 0;
-    /* Hide initially */
-    animation: fadeInUp 1s ease-out forwards;
-}
-
-.pepsi125Header h2 {
-    animation-delay: 0.5s;
-}
-
-.pepsi125Header h3 span.text-primary-3 {
-    animation-delay: 1s;
-}
-
-.pepsi125Header h3 span.text-primary-4 {
-    animation-delay: 1.5s;
-}
-
-.pepsi125Header h3 span.text-primary-5 {
-    animation-delay: 2s;
-}
-.display-5 {
-    opacity: 1;
-    animation: pulseAnimation 6s linear 2 forwards;
-}
-
-@keyframes pulseAnimation {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
+@media only screen and(max-width:700px) {
+    
 
     #background {
         margin-top: 100px;
@@ -583,5 +427,5 @@ p:hover {
         height: auto!important;
         width: calc(100%/3)!important;
     }
-}
+
 }

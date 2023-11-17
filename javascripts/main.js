@@ -1,6 +1,6 @@
 //https://www.pepsi.com/en-us/refresh082123/media/PEPSI_2023_PR_Sizzle_1920px_trimmed.mp4
 //https://www.pepsi.com/en-us/refresh082123/media/PEPSI_2023_PR_Sizzle_1920px_trimmed.mp4
-const dataSlider=[
+const dataSlider = [
 
   "image/backgroundSlider2.jpg",
   "image/backgroundSlider3.jpg",
@@ -21,6 +21,7 @@ const dataSlider=[
   "image/backgroundSlider18.jpg",
   "image/backgroundSlider19.jpg",
 ]
+
 const dataWave=[
   "image/pepsi.png",
   "image/pepsimango.png",
@@ -43,14 +44,14 @@ waveContainer.innerHTML=dataWave.map((data)=>(`<div class="col-md-2 overflow-hid
 const data=document.querySelector('.data')
 if(data!==null){
   data.innerHTML=dataSlider.map((data)=>(`<div class="col-md-2 overflow-hidden p-0 imgList dataList" ><img src="${data}" class="img-fluid p-0 dataItems"/></div>`)).join("")
-
 }
 
 
-   const menu=document.querySelector('#menu')
-   if(menu!==null){
-     menu.innerHTML=
-   `
+
+const menu = document.querySelector('#menu')
+if (menu !== null) {
+  menu.innerHTML =
+    `
    <ul class="list">
     <li class="list-item mx-sm-3"><img src="image/logo.png" alt=""></li>
     <li class="list-item mx-sm-3 active"><span>VIEW PRODUCT</span>
@@ -58,22 +59,22 @@ if(data!==null){
     <li class="list-item mx-sm-3"><a href="pepsi125.html">#PEPSI125</a></li>
 </ul>
 `
-   }
-  
-   
-const background=document.querySelector('#background')
-if(background!==null){
-    background.innerHTML=
-   `
+}
+
+
+const background = document.querySelector('#background')
+if (background !== null) {
+  background.innerHTML =
+    `
    <video class="embed-responsive-item" src="https://www.pepsi.com/en-us/refresh082123/media/PEPSI_2023_PR_Sizzle_1920px_trimmed.mp4" autoplay="true" loop="true" playsinline="true" muted="true"></video>
    `
 
- 
+
 }
-const pepsi125=document.querySelector('#pepsi125')
-if(pepsi125!==null){
-    pepsi125.innerHTML=
-`
+const pepsi125 = document.querySelector('#pepsi125')
+if (pepsi125 !== null) {
+  pepsi125.innerHTML =
+    `
 <div class="header">
 <h2>CELEBRATING 125 YEARS</h2> 
 <h3 class="text"><span>OF PEPSI FOR 125 DAYS.</span></h3>
@@ -84,19 +85,19 @@ if(pepsi125!==null){
 <video type="video/mp4"  src="https://www.pepsi.com/en-us/refresh082123/media/Titan_TR_Digital_30_PETD3091000H_CreativeX_sm.mp4" autoplay="true" loop="true" playsinline="true" muted="true"></video>
 `
 }
-const pepsi125Background=document.querySelector('#pepsi125Background')
-if(pepsi125Background!==null){
-    pepsi125Background.innerHTML=
+const pepsi125Background = document.querySelector('#pepsi125Background')
+if (pepsi125Background !== null) {
+  pepsi125Background.innerHTML =
     `
     <img src="image/background1.png" alt="" class="img-fluid" >
     `
 }
 
 
-   const slider=document.querySelector('#slider')
-   if(slider!==null){
-    slider.innerHTML=
-   `
+const slider = document.querySelector('#slider')
+if (slider !== null) {
+  slider.innerHTML =
+    `
    <div class='sliderContainer container-fluid d-flex flex-column align-items-center pb-5 ' style="background:#000 ;color:#1636ff">
      <h1 class='display-5 my-lg-4' style=" font-family: 'Roboto',sans-serif; font-weight:bold">STAY ON THE PULSE. FOLLOW PEPSI.</h1>
      <div class=' imgList row mb-lg-5 ' style='height:auto ;  width:90% ;border:3px solid #1636ff' >
@@ -110,12 +111,12 @@ if(pepsi125Background!==null){
      </div>
    </div>
    `
-   }
-   
-   
-   const footer = document.querySelector('#footer')
-   footer.innerHTML=
-   `
+}
+
+
+const footer = document.querySelector('#footer')
+footer.innerHTML =
+  `
    <div class='footerContainer  row d-flex align-items-center' style="color:white; width:100%;margin:0">
        <div class='logo col-xl-2 d-flex align-items-center' >
          <img src='image/logo.png'/>
@@ -143,18 +144,19 @@ if(pepsi125Background!==null){
        </div>
    </div>
    `
-   
-   
-    document.querySelector('.active').addEventListener('click', () => {
-       wave.classList.toggle('show');
-       if (!wave.classList.contains('show')) {
-           wave.classList.add('hide');
-           wave.addEventListener('animationend', () => {
-               wave.classList.remove('hide');
-               wave.style.display = 'none'; // Ẩn phần tử sau khi animation kết thúc
-           }, { once: true });
-       } else {
-           wave.classList.remove('hide');
-           wave.style.display = 'flex'; // Hiển thị phần tử trước khi animation bắt đầu
-       }
-   });
+
+const activeButton = document.querySelector('.active');
+
+activeButton.addEventListener('click', () => {
+  wave.classList.toggle('show');
+  if (!wave.classList.contains('show')) {
+    wave.classList.add('hide');
+    wave.addEventListener('animationend', () => {
+      wave.classList.remove('hide');
+      wave.style.display = 'none'; // Ẩn phần tử sau khi animation kết thúc
+    }, { once: true });
+  } else {
+    wave.classList.remove('hide');
+    wave.style.display = 'block'; // Hiển thị phần tử trước khi animation bắt đầu
+  }
+});

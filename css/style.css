@@ -479,7 +479,6 @@ p:hover {
 
     .logo img {
         width: 30%;
-
     }
 
     .footerContainer {
@@ -513,7 +512,6 @@ p:hover {
         font-size: 16px;
 
     }
-
     .data .dataList {
         width: calc(100%/3);
     }

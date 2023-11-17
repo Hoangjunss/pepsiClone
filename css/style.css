@@ -586,3 +586,67 @@ p:hover {
         color: yellow;
     }
 }
+.pepsi125Header
+{
+    padding: 2rem 1em 2rem 1em;
+}
+.text-primary-2
+{
+    font-size: 60px;
+    line-height: 60px;
+    color: blue;
+    font-weight: bolder;
+}
+.pepsi125Header h3
+{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.text-primary-3
+{
+    color: blue;
+}
+.text-primary-4
+{
+    color: white;
+}
+.text-primary-5
+{
+    color: blue;
+}
+.pepsi125Header h2, h3 span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pepsi125Header h2, .pepsi125Header h3 span {
+    opacity: 0; /* Hide initially */
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.pepsi125Header h2 {
+    animation-delay: 0.5s;
+}
+
+.pepsi125Header h3 span.text-primary-3 {
+    animation-delay: 1s;
+}
+
+.pepsi125Header h3 span.text-primary-4 {
+    animation-delay: 1.5s;
+}
+
+.pepsi125Header h3 span.text-primary-5 {
+    animation-delay: 2s;
+}

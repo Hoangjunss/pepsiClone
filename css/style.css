@@ -584,10 +584,9 @@ p:hover {
 }
 
 .pepsiVna h2 {
-    animation: fadeInUp 2s ease-in-out, colorChange 4s ease-in-out 1.5s, rainbowAnimation 6s, returnToBlack 0.1s 7s forwards;
-    background: linear-gradient(to right, #ff0000, #ff8000, #ffff00, #80ff00, #00ff80, #0080ff, #8000ff, #ff00ff);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: white;
+    animation: fadeInUp 2s ease-in-out;
+   
 }
 
 @keyframes fadeInUp {
@@ -602,87 +601,12 @@ p:hover {
     }
 }
 
-@keyframes colorChange {
-    14.2857% {
-        color: #ff0000;
-
-    }
-
-    28.5714% {
-        color: #ffa500;
-
-    }
-
-    42.8571% {
-        color: #ffff00;
-
-    }
-
-    57.1428% {
-        color: #008000;
-
-    }
-
-    71.4285% {
-        color: #0000ff;
-
-    }
-
-    85.7142% {
-        color: #4b0082;
-
-    }
-
-    100% {
-        color: pink;
-
-    }
-}
-
-@keyframes rainbowAnimation {
-
-    0%,
-    100% {
-        background-position: 0 0;
-    }
-
-    25% {
-        background-position: 100% 0;
-    }
-
-    50% {
-        background-position: 100% 0;
-    }
-
-    75% {
-        background-position: 0 0;
-    }
-}
-
-@keyframes returnToBlack {
-    to {
-        color: #fff;
-    }
-}
 
 .text-primary-1 {
     color: #007bff;
-    animation: fadeInLeft 3s ease-in-out, colorPulse 4s linear 2 forwards;
+    animation: colorPulse 4s linear 2 forwards;
     display: inline-block;
 }
-
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-500px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 @keyframes colorPulse {
 
     0%,
@@ -768,17 +692,9 @@ h3 span {
 .pepsi125Header h3 span.text-primary-5 {
     animation-delay: 2s;
 }
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.display-5 {
+    opacity: 1;
+    animation: pulseAnimation 6s linear 2 forwards;
 }
 
 @keyframes pulseAnimation {
@@ -795,7 +711,3 @@ h3 span {
     }
 }
 
-.display-5 {
-    opacity: 0;
-    animation: fadeIn 3s ease-out forwards, pulseAnimation 6s linear 2 forwards;
-}

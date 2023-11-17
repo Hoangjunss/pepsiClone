@@ -38,7 +38,7 @@ const waveContainer=document.querySelector('.waveContainer')
 if(wave!==null&&waveContainer!==null){
 
 
-waveContainer.innerHTML=dataWave.map((data)=>(`<div class="col-md-2 overflow-hidden p-0 imgList dataList h-100"  ><img src="${data}" class="img-fluid p-0 dataItems"/></div>`)).join("")
+waveContainer.innerHTML=dataWave.map((data)=>(`<div class="col-md-2 overflow-hidden p-0 imgList dataList dataWave"  ><img src="${data}" class="img-fluid p-0 dataItems"/></div>`)).join("")
 }
 const data=document.querySelector('.data')
 if(data!==null){

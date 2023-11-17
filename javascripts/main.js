@@ -21,11 +21,31 @@ const dataSlider = [
   "image/backgroundSlider18.jpg",
   "image/backgroundSlider19.jpg",
 ]
-const data = document.querySelector('.data')
-if (data !== null) {
-  data.innerHTML = dataSlider.map((data) => (`<div class="col-md-2 overflow-hidden p-0 imgList dataList" ><img src="${data}" class="img-fluid p-0 dataItems"/></div>`)).join("")
 
+const dataWave=[
+  "image/pepsi.png",
+  "image/pepsimango.png",
+  "image/pepsinitro.png",
+  "image/pepsinitrovanilla.png",
+  "image/pepsiwildcherry.png",
+  "image/pepsizero.png",
+
+]
+const wave = document.querySelector('.wave');
+const waveContainer=document.querySelector('.waveContainer')
+
+
+
+if(wave!==null&&waveContainer!==null){
+
+
+waveContainer.innerHTML=dataWave.map((data)=>(`<div class="col-md-2 overflow-hidden p-0 imgList dataList dataWave"  ><img src="${data}" class="img-fluid p-0 dataItems"/></div>`)).join("")
 }
+const data=document.querySelector('.data')
+if(data!==null){
+  data.innerHTML=dataSlider.map((data)=>(`<div class="col-md-2 overflow-hidden p-0 imgList dataList" ><img src="${data}" class="img-fluid p-0 dataItems"/></div>`)).join("")
+}
+
 
 
 const menu = document.querySelector('#menu')
@@ -124,7 +144,7 @@ footer.innerHTML =
        </div>
    </div>
    `
-const wave = document.querySelector('.wave');
+
 const activeButton = document.querySelector('.active');
 
 activeButton.addEventListener('click', () => {

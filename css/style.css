@@ -568,6 +568,19 @@ p:hover {
     .data .dataList {
         width: calc(100%/3);
     }
+    .waveContainer{
+        height: auto!important;
+    }
+    .dataWave{
+        height: auto!important;
+        width: calc(100%/3)!important;
+    }
+}
+.waveContainer{
+    height: 50%;
+}
+.dataWave{
+    height: 100%;
 }
 
 .pepsiVna h2 {

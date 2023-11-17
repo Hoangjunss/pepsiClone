@@ -21,6 +21,23 @@ const dataSlider=[
   "image/backgroundSlider18.jpg",
   "image/backgroundSlider19.jpg",
 ]
+const dataWave=[
+  "image/pepsi.png",
+  "image/pepsimango.png",
+  "image/pepsinitro.png",
+  "image/pepsinitrovanilla.png",
+  "image/pepsiwildcherry.png",
+  "image/pepsizero.png",
+  "image/pepsizeromango",
+  "image/dietpepsi.png",
+]
+const wave = document.querySelector('.wave');
+
+if(wave!==null){
+
+
+wave.innerHTML=dataWave.map((data)=>(`<div class="col-md-4 overflow-hidden p-0 imgList dataList" ><img src="${data}" class="img-fluid p-0 dataItems"/></div>`)).join("")
+}
 const data=document.querySelector('.data')
 if(data!==null){
   data.innerHTML=dataSlider.map((data)=>(`<div class="col-md-2 overflow-hidden p-0 imgList dataList" ><img src="${data}" class="img-fluid p-0 dataItems"/></div>`)).join("")
@@ -124,10 +141,9 @@ if(pepsi125Background!==null){
        </div>
    </div>
    `
-   const wave = document.querySelector('.wave');
-   const activeButton = document.querySelector('.active');
    
-   activeButton.addEventListener('click', () => {
+   
+    document.querySelector('.active').addEventListener('click', () => {
        wave.classList.toggle('show');
        if (!wave.classList.contains('show')) {
            wave.classList.add('hide');
@@ -137,6 +153,6 @@ if(pepsi125Background!==null){
            }, { once: true });
        } else {
            wave.classList.remove('hide');
-           wave.style.display = 'block'; // Hiển thị phần tử trước khi animation bắt đầu
+           wave.style.display = 'flex'; // Hiển thị phần tử trước khi animation bắt đầu
        }
    });
